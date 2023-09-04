@@ -3,6 +3,7 @@ services:
     name: matomo
     env: docker
     plan: standard
+    region: frankfurt
     # Recommended health check endpoint: https://matomo.org/faq/how-to/faq_20278/
     healthCheckPath: /matomo.php
     autoDeploy: false
@@ -37,6 +38,7 @@ services:
     repo: https://github.com/render-examples/mysql.git
     env: docker
     plan: standard
+    region: frankfurt
     autoDeploy: false
     disk:
       name: mysql-matomo
